@@ -1,0 +1,46 @@
+{
+  "name": "qwenwork-magpie-plugin",
+  "version": "0.1.0",
+  "description": "Magpie provider plugin for QwenWork (千问办公), with device OAuth and COSY request signing",
+  "type": "module",
+  "main": "./index.mjs",
+  "exports": "./index.mjs",
+  "files": [
+    "index.mjs",
+    "src/",
+    "scripts/",
+    "README.md",
+    "README_EN.md",
+    "NOTICE",
+    "SECURITY.md",
+    "DISCLAIMER.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SUPPORT.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "magpie",
+    "magpie-plugin",
+    "qwenwork",
+    "qwen",
+    "provider"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "magpie": {
+    "name": "QwenWork（千问办公）",
+    "summary": {
+      "en": "Use your QwenWork account in Magpie with device sign-in and COSY-signed requests.",
+      "zh": "通过设备授权登录千问办公，在 Magpie 中使用你的账号和 COSY 签名请求。"
+    },
+    "maxConcurrency": 3
+  },
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs"
+  }
+}

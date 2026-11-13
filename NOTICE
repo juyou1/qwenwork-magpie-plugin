@@ -1,0 +1,54 @@
+# Source and license notice / 来源与许可说明
+
+## English
+
+This plugin contains an independent JavaScript/Magpie integration and protocol
+adaptations based on the QwenWork provider in **CLI2API**.
+
+- Project: https://github.com/caigee-cmd/cli2api
+- Reference paths in the CLI2API source (the snapshot used during development):
+  - `internal/providers/qwenwork/client.go`
+  - `internal/providers/qwenwork/credential.go`
+  - `internal/providers/qwenwork/cosy.go`
+  - `internal/providers/qwenwork/payload.go`
+  - `internal/providers/qwenwork/sse.go`
+  - `internal/providers/qwenwork/checkin.go`
+  - related request, response and error translation files
+- The reference project's `LICENSE` is the MIT License and is reproduced here
+  verbatim as `LICENSE`.
+- The CLI2API source itself is not included in this repository.
+- Original reference copyright: `Copyright (c) 2026 caigee-cmd`.
+
+The Magpie hook wiring, credential compatibility layer, local streaming
+adapter, tests and documentation are integration code in this package. This
+package is distributed under the included MIT License. There is no affiliation
+with, or endorsement by, Alibaba, Qwen, Magpie or the CLI2API authors.
+
+The implementation is for accounts and API access that you own or are
+explicitly authorized to use. It does not bypass subscription, quota, captcha,
+or other service controls.
+
+## 中文
+
+本插件包含独立的 JavaScript/Magpie 接入代码，并参考 **CLI2API** 中的
+QwenWork provider 移植协议实现。
+
+- 项目地址：https://github.com/caigee-cmd/cli2api
+- 开发时参考的 CLI2API 源码路径：
+  - `internal/providers/qwenwork/client.go`
+  - `internal/providers/qwenwork/credential.go`
+  - `internal/providers/qwenwork/cosy.go`
+  - `internal/providers/qwenwork/payload.go`
+  - `internal/providers/qwenwork/sse.go`
+  - `internal/providers/qwenwork/checkin.go`
+  - 相关请求、响应和错误转换文件
+- 参考项目的 `LICENSE` 为 MIT License，已原样收录为本目录的 `LICENSE`。
+- 本仓库不包含 CLI2API 源码本体。
+- 参考项目原始版权：`Copyright (c) 2026 caigee-cmd`。
+
+Magpie 钩子接入、凭据兼容层、本地流式适配、测试和文档属于本包的集成
+代码。本包按随附 MIT License 分发，与阿里巴巴、通义、Magpie 或 CLI2API
+作者没有隶属或背书关系。
+
+本实现仅用于你拥有或明确获授权使用的账号和 API 访问，不绕过订阅、额度、
+验证码或其他服务控制。
